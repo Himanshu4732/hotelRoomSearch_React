@@ -1,0 +1,18 @@
+.main{
+    background-image: url(./images/man-camping-in-nature-and-watching-stars-picjumbo-com.jpg);
+    background-position: center;
+    height: 120vh;
+    width: 100%;
+    z-index: -2;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.shadows{
+    box-shadow: rgba(7, 7, 7, 0.3) 0px 19px 38px, rgba(31, 31, 31, 0.22) 0px 15px 12px;
+}
+
+.flip{
+    transform: scaleX(-1);
+}
+
