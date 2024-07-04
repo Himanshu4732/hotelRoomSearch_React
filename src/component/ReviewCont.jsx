@@ -11,7 +11,7 @@ function ReviewCont({ image, flex, heading, content }) {
   }, [flex]);
 
   return (
-    <div ref={divRef} className='w-3/4 px-10 py-5 flex items-center justify-between  gap-20'>
+    <div ref={divRef} className='w-3/4 px-10 py-5 flex items-center justify-between  gap-32'>
       <img src={image} className='w-2/5 rounded-xl' alt="" />
       <span className='flex flex-col gap-5'>
         <h2 className='text-2xl leading-tight font-bold'>{heading}</h2>
