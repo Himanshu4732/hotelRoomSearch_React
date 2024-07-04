@@ -4,6 +4,7 @@ import About from './component/About'
 import Roomsearch from './component/Roomsearch'
 import Review from './component/Review'
 import Mountain from './component/Mountain'
+import Footer from './component/Footer'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Roomsearch/>
       <Review/>
       <Mountain/>
+      <Footer/>
     </>
   )
 }
