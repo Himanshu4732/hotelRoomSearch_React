@@ -2,6 +2,7 @@ import React from 'react'
 import Mainpage from './component/Mainpage'
 import About from './component/About'
 import Roomsearch from './component/Roomsearch'
+import Review from './component/Review'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       < Mainpage />
       <About/>
       <Roomsearch/>
+      <Review/>
     </>
   )
 }

@@ -8,10 +8,9 @@ function Roomsearch() {
   const [loading, setLoading] = useState(false);
   const [roomData, setroomData] = useState(null);
 
-
   async function fetchRoomData(param) {
     setLoading(true);
-   
+
     const url = `https://airbnb13.p.rapidapi.com/search-location?location=${param}&checkin=2025-01-12&checkout=2025-01-13&adults=1&children=0&infants=0&pets=0&page=1&currency=USD`;
     const options = {
       method: "GET",
@@ -24,14 +23,12 @@ function Roomsearch() {
     try {
       const response = await fetch(url, options);
       const result = await response.json();
-      if(result){
-          console.log(result);
-          setroomData(result);  
-          setLoading(false);
-        
+      if (result) {
+        console.log(result);
+        setroomData(result);
+        setLoading(false);
       }
     } catch (error) {
-
       console.error(error);
       setLoading(false);
     }
@@ -58,6 +55,7 @@ function Roomsearch() {
             setSearch={setSearch}
             handleSearch={handleSearch}
           />
+          
         </div>
       </div>
     </div>
